@@ -6,7 +6,7 @@ function Services() {
     <section className={style.services}>
       <Card
         heading='Брокер CryptoPrime'
-        subheading='Безопасный брокер с расчётом в рублях'
+        subheading='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система '
         className={style.brokers}
       />
       <Card
@@ -16,7 +16,6 @@ function Services() {
       />
       <Card heading='Биржи' className={style.exchanges} />
       <Card heading='Медиа' className={style.media} />
-
       <Card heading='Scalping Tools' className={style.tools} />
       <Card heading='Проп-компания' className={style.company} />
       <Card heading='Discord' className={style.discord} />
