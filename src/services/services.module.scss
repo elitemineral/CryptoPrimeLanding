@@ -1,0 +1,41 @@
+@use '../shared/styles/colors.module.scss' as *;
+
+.services {
+  display: grid;
+  gap: 8px;
+
+  grid-template-columns: 712px 352px 1fr;
+
+  grid-template-areas:
+    'brokers . .'
+    'academy exchanges media'
+    'tools company discord';
+}
+
+.brokers {
+  grid-area: brokers;
+}
+
+.academy {
+  grid-area: academy;
+}
+
+.exchanges {
+  grid-area: exchanges;
+}
+
+.media {
+  grid-area: media;
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.company {
+  grid-area: company;
+}
+
+.discord {
+  grid-area: discord;
+}

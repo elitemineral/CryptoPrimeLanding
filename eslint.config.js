@@ -63,7 +63,7 @@ export default defineConfig([
       'react/jsx-tag-spacing': 'off', // Запрет на отсутствие пробелов до/перед тегом компонента - prettier при коммите в автоматическом режиме обработает файлы,
       'react/jsx-wrap-multilines': 'off', // Запрет отсутствия крублых скобок в JSX
       'react/jsx-child-element-spacing': 'off', // Запрет на отсутствие пробелов в фигурных скобках
-      'react/require-default-props': 'off', // Не проверять наличие defaultProps, так как React выдает предупреждние, что в скором времени defaultProps будут удалены
+      'react/prop-types': 'off',
       'no-unused-vars': ['error', { varsIgnorePattern: '^_.*' }],
     },
   },
