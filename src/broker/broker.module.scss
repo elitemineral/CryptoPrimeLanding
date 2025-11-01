@@ -1,0 +1,6 @@
+@use '../shared/styles/colors.scss' as *;
+
+.root {
+  grid-area: broker;
+  background-color: $sapphire;
+}

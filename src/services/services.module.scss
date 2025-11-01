@@ -1,4 +1,4 @@
-@use '../shared/styles/colors.module.scss' as *;
+@use '../shared/styles/colors.scss' as *;
 
 .services {
   display: grid;
@@ -7,21 +7,9 @@
   grid-template-columns: 1fr 352px 208px;
 
   grid-template-areas:
-    'brokers . .'
+    'broker . .'
     'academy exchanges media'
     'tools company discord';
-}
-
-.brokers {
-  grid-area: brokers;
-  background-color: $sapphire;
-
-  font-size: 40px;
-}
-
-.academy {
-  grid-area: academy;
-  background-color: $dodger-blue;
 }
 
 .exchanges {
@@ -34,10 +22,6 @@
   background-color: $bright-sun;
 }
 
-.tools {
-  grid-area: tools;
-}
-
 .company {
   grid-area: company;
 }
@@ -46,16 +30,6 @@
   grid-area: discord;
 }
 
-.academy,
-.exchanges,
-.media,
-.tools,
-.company,
-.discord {
-  font-size: 32px;
-}
-
-.tools,
 .company,
 .discord {
   color: $dark-jungle;
@@ -67,7 +41,7 @@
     grid-template-columns: 1fr 208px 208px;
 
     grid-template-areas:
-      'brokers . .'
+      'broker . .'
       'academy exchanges exchanges'
       'tools company company'
       '. discord media';

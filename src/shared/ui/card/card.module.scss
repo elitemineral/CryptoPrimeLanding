@@ -1,19 +1,31 @@
-@use '../../styles/colors.module.scss' as *;
+@use '../../styles/colors.scss' as *;
 
 .card {
-  height: 180px;
+  display: flex;
+  flex-direction: column;
+
+  height: 228px;
 
   padding: 24px;
   border-radius: 32px;
 
   color: $white;
   font-family: 'Inter';
+
+  transition:
+    box-shadow 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    box-shadow: 8px 8px 32px 0 $shadow-color;
+    border-color: transparent;
+  }
 }
 
 .heading {
   margin: 0 0 8px 0;
 
-  font-size: inherit;
+  font-size: 32px;
   font-weight: 600;
 
   line-height: 120%;
@@ -27,4 +39,8 @@
   font-weight: 400;
 
   line-height: 120%;
+}
+
+.content {
+  margin-top: auto;
 }

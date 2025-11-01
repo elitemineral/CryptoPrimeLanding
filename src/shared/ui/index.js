@@ -1,1 +1,3 @@
-export { default as Card } from './card/Card';
+export { Card } from './card/Card';
+export { Link } from './link/Link';
+export { Icon } from './icons/Icon';

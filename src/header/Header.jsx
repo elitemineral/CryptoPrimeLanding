@@ -1,6 +1,6 @@
 import style from './header.module.scss';
 
-function Header() {
+export function Header() {
   return (
     <header className={style.header}>
       <h1 className={style.heading}>CryptoPrime</h1>
@@ -8,5 +8,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

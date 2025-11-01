@@ -1,11 +1,11 @@
-import Header from '../header/Header';
-import Services from '../services/Services';
+import { Header } from '../header/Header';
+import { Services } from '../services/Services';
 
 import style from './app.module.scss';
-import '../shared/styles/normalize.css';
-import '../shared/styles/fonts.module.scss';
+import '../shared/styles/reset.css';
+import '../shared/styles/fonts.scss';
 
-function App() {
+export function App() {
   return (
     <div className={style.wrapper}>
       <Header />
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

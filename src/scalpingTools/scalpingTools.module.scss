@@ -1,0 +1,37 @@
+@use '../shared/styles/colors.scss' as *;
+
+.root {
+  grid-area: tools;
+  color: $dark-jungle;
+  border: 1px solid $gainsboro;
+}
+
+.arrow {
+  path {
+    stroke: $white;
+  }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 16px;
+  color: $white;
+  background-color: $dark-jungle;
+
+  font-weight: 400;
+
+  &:hover {
+    background-color: $charcoal-grey;
+  }
+}
+
+.tools {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+
+  margin-top: 16px;
+}

@@ -1,0 +1,26 @@
+@use '../../styles/colors.scss' as *;
+
+.root {
+  display: inline-block;
+  padding: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: $dark-jungle;
+  background-color: $white;
+  border-radius: 16px;
+  text-decoration: none;
+
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+
+  // TODO: сделать стили при нажатии, дизейблинге
+  &:hover {
+    color: $white;
+    background-color: $palatinate-blue;
+    cursor: pointer;
+  }
+}
