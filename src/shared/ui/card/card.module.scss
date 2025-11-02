@@ -19,6 +19,17 @@
   &:hover {
     box-shadow: 8px 8px 32px 0 $shadow-color;
     border-color: transparent;
+
+    &.hasDescription {
+      .heading,
+      .subheading {
+        display: none;
+      }
+
+      .description {
+        display: block;
+      }
+    }
   }
 }
 
@@ -43,4 +54,12 @@
 
 .content {
   margin-top: auto;
+}
+
+.description {
+  display: none;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
 }

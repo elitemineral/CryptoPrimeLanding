@@ -1,0 +1,19 @@
+@use '../shared/styles/colors.scss' as *;
+
+.root {
+  grid-area: trading;
+  background-color: $blue-lotus;
+}
+
+.heading {
+  text-align: end;
+}
+
+.exchanges {
+  text-align: right;
+}
+
+.exchange {
+  width: 40px;
+  border-radius: 50%;
+}
