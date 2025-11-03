@@ -3,12 +3,16 @@
 .root {
   grid-area: tools;
   color: $dark-jungle;
-  border: 1px solid $gainsboro;
+  outline: 1px solid $gainsboro;
+}
+
+.heading {
+  font-weight: 500;
 }
 
 .arrow {
   path {
-    stroke: $white;
+    stroke: $dark-jungle;
   }
 }
 
@@ -26,6 +30,11 @@
   &:hover {
     background-color: $charcoal-grey;
   }
+}
+
+.toolsHeading {
+  display: flex;
+  align-items: center;
 }
 
 .tools {

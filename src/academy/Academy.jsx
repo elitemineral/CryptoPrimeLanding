@@ -6,6 +6,7 @@ export function Academy() {
   return (
     <Card
       className={style.root}
+      description='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система'
       heading='CryptoAcademy'
       subheading='школа обучения'
     >
