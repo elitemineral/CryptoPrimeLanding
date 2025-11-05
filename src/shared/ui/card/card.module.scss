@@ -1,11 +1,12 @@
 @use '../../styles/colors.scss' as *;
+@use '../../styles/functions.scss' as *;
 
-.card {
+.root {
   display: flex;
   flex-direction: column;
   position: relative;
 
-  height: 228px;
+  min-height: 228px;
 
   padding: 24px;
   border-radius: 32px;
@@ -56,10 +57,6 @@
   line-height: 120%;
 }
 
-.content {
-  margin-top: auto;
-}
-
 .description {
   position: absolute;
   visibility: hidden;
@@ -74,8 +71,35 @@
   line-height: 120%;
 }
 
+.content {
+  margin-top: auto;
+}
+
 .heading,
 .subheading,
 .description {
   transition: opacity 0.3s;
+}
+
+@media (max-width: 767px) {
+  .subheading {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 429px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .root {
+    min-height: calcFluid(208, 228, 320, 390);
+    padding: calcFluid(21, 24, 320, 390);
+  }
+
+  .heading {
+    font-size: calcFluid(26, 32, 320, 390);
+  }
 }

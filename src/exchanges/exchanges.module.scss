@@ -1,4 +1,8 @@
 @use '../shared/styles/colors.scss' as *;
+@use '../shared/styles/functions.scss' as *;
+
+$link-base: 64;
+$link-min: 48;
 
 .root {
   grid-area: trading;
@@ -6,14 +10,35 @@
 }
 
 .heading {
-  text-align: end;
-}
-
-.exchanges {
   text-align: right;
 }
 
-.exchange {
+.content {
+  text-align: right;
+}
+
+.exchangeItem {
   width: 40px;
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    text-align: left;
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 390px) {
+  .exchangeItemLink {
+    width: calcFluid($link-min, $link-base, 320, 390);
+    height: calcFluid($link-min, $link-base, 320, 390);
+  }
+
+  .exchangeItem {
+    width: calcFluid(32, 40, 320, 390);
+  }
 }

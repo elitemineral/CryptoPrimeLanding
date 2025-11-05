@@ -10,15 +10,14 @@ export function Exchanges() {
     <Card
       heading='Биржи'
       className={style.root}
+      contentClassName={style.content}
       headingClassName={style.heading}
     >
-      <div className={style.exchanges}>
-        {media.map(({ name, src }) => (
-          <LinkRounded key={name}>
-            <img alt={name} className={style.exchange} src={src} />
-          </LinkRounded>
-        ))}
-      </div>
+      {media.map(({ name, src }) => (
+        <LinkRounded className={style.exchangeItemLink} key={name}>
+          <img alt={name} className={style.exchangeItem} src={src} />
+        </LinkRounded>
+      ))}
     </Card>
   );
 }

@@ -1,0 +1,9 @@
+@function calcFluid($f-min, $f-max, $w-min: 360, $w-max: 1920) {
+  @return min(
+    calc(
+      (100vw - $w-min * 1px) / ($w-max - $w-min) * ($f-max - $f-min) + $f-min *
+        1px
+    ),
+    $f-max * 1px
+  );
+}

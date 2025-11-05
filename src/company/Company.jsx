@@ -5,7 +5,6 @@ export function Company() {
   return (
     <LinkedCard
       className={style.root}
-      description='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система'
       headingClassName={style.heading}
       heading='Проп-компания'
       subheading='Описание'

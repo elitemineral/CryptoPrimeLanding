@@ -3,9 +3,13 @@ import style from './media.module.scss';
 
 export function Media() {
   return (
-    <Card heading='Медиа' className={style.root}>
+    <Card
+      heading='Медиа'
+      className={style.root}
+      contentClassName={style.content}
+    >
       {media.map((type) => (
-        <LinkRounded key={type}>
+        <LinkRounded className={style.mediaItemLink} key={type}>
           <Icon type={type} />
         </LinkRounded>
       ))}

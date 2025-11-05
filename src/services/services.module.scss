@@ -23,3 +23,17 @@
       '. discord media';
   }
 }
+
+@media (max-width: 767px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      'broker broker'
+      'academy academy'
+      'trading trading'
+      'tools tools'
+      'company company'
+      'discord media';
+  }
+}

@@ -1,4 +1,5 @@
 @use '../shared/styles/colors.scss' as *;
+@use '../shared/styles/functions.scss' as *;
 
 .header {
   color: $lapis-blue;
@@ -30,5 +31,22 @@
 
   .heading {
     font-size: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 64px;
+  }
+
+  .heading {
+    margin: 0 0 8px 0;
+  
+    font-size: calcFluid(48, 60, 320, 767);
+    letter-spacing: -2.4px;
+  }
+
+  .subheading {
+    font-size: 18px;
   }
 }
