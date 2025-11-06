@@ -5,7 +5,7 @@ import style from './academy.module.scss';
 export function Academy() {
   return (
     <Card
-      className={style.root}
+      className={style.academy}
       description='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система'
       heading='CryptoAcademy'
       subheading='школа обучения'

@@ -5,7 +5,7 @@ export function Media() {
   return (
     <Card
       heading='Медиа'
-      className={style.root}
+      className={style.media}
       contentClassName={style.content}
     >
       {media.map((type) => (

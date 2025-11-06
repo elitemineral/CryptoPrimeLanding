@@ -4,7 +4,7 @@ import style from './scalpingTools.module.scss';
 export function ScalpingTools() {
   return (
     <Card
-      className={style.root}
+      className={style.scalpingTools}
       description='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система'
       heading='Scalping Tools'
       headingClassName={style.heading}

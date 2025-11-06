@@ -8,7 +8,7 @@
 
   grid-template-areas:
     'broker . .'
-    'academy trading media'
+    'academy exchanges media'
     'tools company discord';
 }
 
@@ -18,20 +18,42 @@
 
     grid-template-areas:
       'broker . .'
-      'academy trading trading'
+      'academy exchanges exchanges'
       'tools company company'
       '. discord media';
   }
 }
 
+@media (max-width: 920px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      'broker broker . .'
+      'academy academy exchanges exchanges'
+      'tools tools company company'
+      '. . discord media';
+  }
+}
+
 @media (max-width: 767px) {
+  .services {
+    grid-template-areas:
+      'broker broker broker broker'
+      'academy academy academy academy'
+      'exchanges exchanges tools tools'
+      'company company discord media';
+  }
+}
+
+@media (max-width: 720px) {
   .services {
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
       'broker broker'
       'academy academy'
-      'trading trading'
+      'exchanges exchanges'
       'tools tools'
       'company company'
       'discord media';

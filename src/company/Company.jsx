@@ -4,7 +4,7 @@ import style from './company.module.scss';
 export function Company() {
   return (
     <LinkedCard
-      className={style.root}
+      className={style.company}
       headingClassName={style.heading}
       heading='Проп-компания'
       subheading='Описание'

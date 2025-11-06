@@ -12,7 +12,7 @@ export function Card({
 }) {
   return (
     <div
-      className={classNames(style.root, className, {
+      className={classNames(style.card, className, {
         [style.hasDescription]: description != null,
       })}
     >

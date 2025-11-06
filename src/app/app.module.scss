@@ -5,30 +5,33 @@
   margin: 0 auto;
   padding: 15px 76px 28px;
 
-  // background: url('../shared/assets/images/background-desktop.png') no-repeat
-  //   top 0 right 100px;
+  background: url('../shared/assets/images/background-desktop.png') no-repeat
+    top 0 right 60px;
 }
 
 @media (max-width: 1279px) {
   .wrapper {
+    padding-top: 80px;
     padding-left: 32px;
     padding-right: 32px;
+
+    background: url('../shared/assets/images/background-tablet-max.png') no-repeat
+    top 0 right 20px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .wrapper {
-    // margin-top: 40px;
-
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    background: url('../shared/assets/images/background-tablet-min.png') no-repeat
+    top 0 right 0;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   .wrapper {
-    // padding-bottom: calcFluid(12, 16, 320, 390);
-    // padding-bottom: 16px;
+    background: url('../shared/assets/images/background-mobile.png') no-repeat
+    top 0 right 0;
+
+    padding: 48px 16px 16px;
   }
 }

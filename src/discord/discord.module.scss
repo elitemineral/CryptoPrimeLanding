@@ -1,9 +1,10 @@
 @use '../shared/styles/colors.scss' as *;
 
-.root {
+.discord {
   grid-area: discord;
   color: $dark-jungle;
   outline: 1px solid $gainsboro;
+  outline-offset: -1px;
   cursor: pointer;
 }
 

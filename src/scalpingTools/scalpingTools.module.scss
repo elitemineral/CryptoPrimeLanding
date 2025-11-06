@@ -1,9 +1,10 @@
 @use '../shared/styles/colors.scss' as *;
 
-.root {
+.scalpingTools {
   grid-area: tools;
   color: $dark-jungle;
   outline: 1px solid $gainsboro;
+  outline-offset: -1px;
 }
 
 .heading {
@@ -47,13 +48,13 @@
 }
 
 @media (max-width: 479px) {
-  .root {
+  .scalpingTools {
     min-height: 264px;
   }
 }
 
 @media (max-width: 324px) {
-  .root {
+  .scalpingTools {
     min-height: 276px;
   }
 }

@@ -34,19 +34,26 @@
   }
 }
 
-@media (max-width: 767px) {
-  .header {
-    margin-bottom: 64px;
-  }
+@media (max-width: 720px) {
+  $heading: calcFluid(60, 96, 390, 720);
 
   .heading {
-    margin: 0 0 8px 0;
-  
-    font-size: calcFluid(48, 60, 320, 767);
-    letter-spacing: -2.4px;
+    font-size: $heading;
+    letter-spacing: calc($heading * -0.04);
   }
+}
 
+@media (max-width: 490px) {
   .subheading {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  $heading: calcFluid(48, 60, 320, 390);
+
+  .heading {
+    font-size: $heading;
+    letter-spacing: calc($heading * -0.04);
   }
 }

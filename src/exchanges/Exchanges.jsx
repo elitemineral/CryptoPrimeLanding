@@ -9,7 +9,7 @@ export function Exchanges() {
   return (
     <Card
       heading='Биржи'
-      className={style.root}
+      className={style.exchanges}
       contentClassName={style.content}
       headingClassName={style.heading}
     >

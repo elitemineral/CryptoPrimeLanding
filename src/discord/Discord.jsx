@@ -4,7 +4,7 @@ import style from './discord.module.scss';
 export function Discord() {
   return (
     <LinkedCard
-      className={style.root}
+      className={style.discord}
       headingClassName={style.heading}
       heading='Discord'
       href='http://cryptoprime.com'

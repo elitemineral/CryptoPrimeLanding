@@ -1,7 +1,7 @@
 @use '../../styles/colors.scss' as *;
 @use '../../styles/functions.scss' as *;
 
-.root {
+.card {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -81,9 +81,15 @@
   transition: opacity 0.3s;
 }
 
+@media (max-width: 920px) {
+  .card {
+    padding: calcFluid(18, 24, 768, 920);
+  }
+}
+
 @media (max-width: 767px) {
-  .subheading {
-    font-size: 15px;
+  .card {
+    padding: 24px;
   }
 }
 
@@ -94,12 +100,16 @@
 }
 
 @media (max-width: 390px) {
-  .root {
+  .card {
     min-height: calcFluid(208, 228, 320, 390);
     padding: calcFluid(21, 24, 320, 390);
   }
 
   .heading {
     font-size: calcFluid(26, 32, 320, 390);
+  }
+
+  .subheading {
+    font-size: 15px;
   }
 }
