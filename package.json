@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "format": "prettier --write ./**/*.{js,jsx,scss,html,css,json}",
     "lint": "eslint .",
