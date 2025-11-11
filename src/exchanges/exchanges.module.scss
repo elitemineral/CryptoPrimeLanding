@@ -17,7 +17,7 @@ $link-min: 48;
   text-align: right;
 }
 
-.exchangeItem {
+.exchangeImg {
   width: 40px;
   border-radius: 50%;
 }
@@ -33,12 +33,12 @@ $link-min: 48;
 }
 
 @media (max-width: 390px) {
-  .exchangeItemLink {
+  .exchangeLink {
     width: calcFluid($link-min, $link-base, 320, 390);
     height: calcFluid($link-min, $link-base, 320, 390);
   }
 
-  .exchangeItem {
+  .exchangeImg {
     width: calcFluid(32, 40, 320, 390);
   }
 }

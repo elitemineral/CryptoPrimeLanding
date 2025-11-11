@@ -1,4 +1,4 @@
-import { Card, Icon, LinkRounded } from '../shared/ui';
+import { Card, Icon, RoundLink } from '../shared/ui';
 import style from './media.module.scss';
 
 export function Media() {
@@ -9,9 +9,9 @@ export function Media() {
       contentClassName={style.content}
     >
       {media.map((type) => (
-        <LinkRounded className={style.mediaItemLink} key={type}>
+        <RoundLink className={style.mediaLink} key={type}>
           <Icon type={type} />
-        </LinkRounded>
+        </RoundLink>
       ))}
     </Card>
   );

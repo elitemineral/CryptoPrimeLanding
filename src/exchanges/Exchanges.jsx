@@ -1,4 +1,4 @@
-import { Card, LinkRounded } from '../shared/ui';
+import { Card, RoundLink } from '../shared/ui';
 import style from './exchanges.module.scss';
 import binance from '../shared/assets/images/binance.png';
 import bybit from '../shared/assets/images/bybit.png';
@@ -14,9 +14,9 @@ export function Exchanges() {
       headingClassName={style.heading}
     >
       {media.map(({ name, src }) => (
-        <LinkRounded className={style.exchangeItemLink} key={name}>
-          <img alt={name} className={style.exchangeItem} src={src} />
-        </LinkRounded>
+        <RoundLink className={style.exchangeLink} key={name}>
+          <img alt={name} className={style.exchangeImg} src={src} />
+        </RoundLink>
       ))}
     </Card>
   );

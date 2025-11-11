@@ -1,4 +1,4 @@
-import { Card, Link } from '../shared/ui';
+import { Card, BtnLink } from '../shared/ui';
 import style from './broker.module.scss';
 
 export function Broker() {
@@ -9,7 +9,7 @@ export function Broker() {
       heading='Брокер CryptoPrime'
       subheading='Безопасный брокер с расчётом в рублях'
     >
-      <Link href='http://cryptoprime.com'>Начать торги</Link>
+      <BtnLink href='http://cryptoprime.com'>Начать торги</BtnLink>
     </Card>
   );
 }

@@ -1,35 +1,14 @@
 @use '../../styles/colors.scss' as *;
 @use '../../styles/functions.scss' as *;
 
-.root {
+.link {
   display: inline-flex;
-  padding: 16px;
-
+  justify-content: center;
+  align-items: center;
+  
   cursor: pointer;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
 
   color: $dark-jungle;
   background-color: $white;
-  border-radius: 16px;
   text-decoration: none;
-
-  transition:
-    color 0.3s,
-    background-color 0.3s;
-
-  // TODO: сделать стили при нажатии, дизейблинге
-  &:hover {
-    color: $white;
-    background-color: $palatinate-blue;
-  }
-}
-
-@media (max-width: 390px) {
-  .root {
-    padding: calcFluid(11, 16, 320, 390);
-    font-size: calcFluid(14, 16, 320, 390);
-  }
 }

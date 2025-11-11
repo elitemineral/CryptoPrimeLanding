@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Card, Icon, Link } from '../shared/ui';
+import { Card, Icon, BtnLink } from '../shared/ui';
 import style from './academy.module.scss';
 
 export function Academy() {
@@ -10,17 +10,17 @@ export function Academy() {
       heading='CryptoAcademy'
       subheading='школа обучения'
     >
-      <Link className={style.link} href='http://cryptoprime.com'>
+      <BtnLink className={style.academyLink} href='http://cryptoprime.com'>
         Трейдинг
         <Icon className={style.arrow} type={Icon.types.arrow} />
-      </Link>
-      <Link
-        className={classNames(style.link, style.transparent)}
+      </BtnLink>
+      <BtnLink
+        className={classNames(style.academyLink, style.transparentLink)}
         href='http://cryptoprime.com'
       >
         Инвестиции
         <Icon type={Icon.types.arrow} />
-      </Link>
+      </BtnLink>
     </Card>
   );
 }

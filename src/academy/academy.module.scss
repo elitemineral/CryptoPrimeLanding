@@ -5,9 +5,7 @@
   background-color: $dodger-blue;
 }
 
-.link {
-  display: inline-flex;
-  align-items: center;
+.academyLink.academyLink {
   gap: 6px;
 
   &:hover {
@@ -17,10 +15,14 @@
   }
 }
 
-.transparent {
+.transparentLink.transparentLink {
   margin-left: 8px;
   color: $white;
   background-color: transparent;
+
+  &:hover {
+    background-color: $palatinate-blue;
+  }
 }
 
 .arrow {

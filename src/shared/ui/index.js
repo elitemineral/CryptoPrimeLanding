@@ -1,6 +1,5 @@
 export { Card } from './card/Card';
-export { Link } from './linkBtn/LinkBtn';
-export { LinkBtn } from './linkBtn/LinkBtn';
-export { LinkRounded } from './linkRounded/LinkRounded';
+export { BtnLink } from './BtnLink/BtnLink';
+export { RoundLink } from './RoundLink/RoundLink';
 export { LinkedCard } from './linkedCard/LinkedCard';
 export { Icon } from './icons/Icon';

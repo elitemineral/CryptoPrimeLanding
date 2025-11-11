@@ -1,20 +1,13 @@
 @use '../../styles/colors.scss' as *;
 @use '../../styles/functions.scss' as *;
 
-.root {
-  display: inline-block;
-  padding: 16px;
-
+.btnLink {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
 
-  color: $dark-jungle;
-  background-color: $white;
+  padding: 16px;
   border-radius: 16px;
-  text-decoration: none;
-
-  cursor: pointer;
 
   transition:
     color 0.3s,
@@ -28,7 +21,7 @@
 }
 
 @media (max-width: 390px) {
-  .root {
+  .btnLink {
     padding: calcFluid(11, 16, 320, 390);
     font-size: calcFluid(14, 16, 320, 390);
   }

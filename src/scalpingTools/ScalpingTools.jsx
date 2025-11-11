@@ -1,4 +1,4 @@
-import { Card, Icon, Link } from '../shared/ui';
+import { Card, Icon, BtnLink } from '../shared/ui';
 import style from './scalpingTools.module.scss';
 
 export function ScalpingTools() {
@@ -14,18 +14,18 @@ export function ScalpingTools() {
         <Icon className={style.arrow} type={Icon.types.arrow} />
       </div>
       <div className={style.tools}>
-        <Link className={style.link} href='http://cryptoprime.com'>
+        <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.bot} />
           Бот
-        </Link>
-        <Link className={style.link} href='http://cryptoprime.com'>
+        </BtnLink>
+        <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.proxy} />
           Прокси
-        </Link>
-        <Link className={style.link} href='http://cryptoprime.com'>
+        </BtnLink>
+        <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.screen} />
           Скринер
-        </Link>
+        </BtnLink>
       </div>
     </Card>
   );

@@ -1,16 +1,11 @@
 @use '../../styles/colors.scss' as *;
 
-.root {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+.roundLink {
   width: 64px;
   height: 64px;
 
-  background-color: $white;
+  padding: 16px;
   border-radius: 50%;
-  cursor: pointer;
 
   transition: background-color 0.3s;
 

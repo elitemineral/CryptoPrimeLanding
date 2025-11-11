@@ -14,8 +14,16 @@ $link-min: 48;
   width: $content-base + px;
 }
 
+.mediaLink.mediaLink {
+  &:hover {
+    path {
+      stroke: $white;
+    }
+  }
+}
+
 @media (max-width: 390px) {
-  .mediaItemLink {
+  .mediaLink.mediaLink {
     width: calcFluid($link-min, $link-base, 320, 390);
     height: calcFluid($link-min, $link-base, 320, 390);
   }
