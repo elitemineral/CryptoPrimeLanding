@@ -18,6 +18,10 @@
     color: $white;
     background-color: $palatinate-blue;
   }
+
+  &:active {
+    background-color: $dark-jungle-green;
+  }
 }
 
 @media (max-width: 390px) {
