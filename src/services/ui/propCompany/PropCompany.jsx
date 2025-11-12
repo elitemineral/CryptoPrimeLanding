@@ -1,7 +1,7 @@
-import { Card, LinkedCard } from '../shared/ui';
-import style from './company.module.scss';
+import { LinkedCard } from '../../../shared/ui';
+import style from './propCompany.module.scss';
 
-export function Company() {
+export function PropCompany() {
   return (
     <LinkedCard
       className={style.company}

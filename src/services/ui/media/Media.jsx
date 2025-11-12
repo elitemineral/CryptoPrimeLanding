@@ -1,4 +1,4 @@
-import { Card, Icon, RoundLink } from '../shared/ui';
+import { Card, Icon, RoundLink } from '../../../shared/ui';
 import style from './media.module.scss';
 
 export function Media() {

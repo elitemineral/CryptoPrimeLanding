@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Card, Icon, BtnLink } from '../shared/ui';
+import { Card, Icon, BtnLink } from '../../../shared/ui';
 import style from './academy.module.scss';
 
 export function Academy() {

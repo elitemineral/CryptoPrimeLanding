@@ -1,4 +1,4 @@
-import { Card, BtnLink } from '../shared/ui';
+import { Card, BtnLink } from '../../../shared/ui';
 import style from './broker.module.scss';
 
 export function Broker() {

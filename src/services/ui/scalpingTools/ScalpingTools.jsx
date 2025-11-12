@@ -1,4 +1,4 @@
-import { Card, Icon, BtnLink } from '../shared/ui';
+import { Card, Icon, BtnLink } from '../../../shared/ui';
 import style from './scalpingTools.module.scss';
 
 export function ScalpingTools() {

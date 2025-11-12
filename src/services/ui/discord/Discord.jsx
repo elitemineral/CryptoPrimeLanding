@@ -1,4 +1,4 @@
-import { LinkedCard } from '../shared/ui';
+import { LinkedCard } from '../../../shared/ui';
 import style from './discord.module.scss';
 
 export function Discord() {

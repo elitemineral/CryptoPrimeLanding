@@ -3,7 +3,7 @@ import { Broker } from '../broker/Broker';
 import { ScalpingTools } from '../scalpingTools/ScalpingTools';
 import { Exchanges } from '../exchanges/Exchanges';
 import { Media } from '../media/Media';
-import { Company } from '../company/Company';
+import { PropCompany } from '../propCompany/PropCompany';
 import { Discord } from '../discord/Discord';
 import style from './services.module.scss';
 
@@ -15,7 +15,7 @@ export function Services() {
       <Exchanges />
       <Media />
       <ScalpingTools />
-      <Company />
+      <PropCompany />
       <Discord />
     </section>
   );

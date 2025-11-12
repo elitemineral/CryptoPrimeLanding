@@ -1,9 +1,9 @@
-import { Card, RoundLink } from '../shared/ui';
+import { Card, RoundLink } from '../../../shared/ui';
 import style from './exchanges.module.scss';
-import binance from '../shared/assets/images/binance.png';
-import bybit from '../shared/assets/images/bybit.png';
-import bitget from '../shared/assets/images/bitget.png';
-import okx from '../shared/assets/images/okx.png';
+import binance from '../../../shared/assets/images/binance.png';
+import bybit from '../../../shared/assets/images/bybit.png';
+import bitget from '../../../shared/assets/images/bitget.png';
+import okx from '../../../shared/assets/images/okx.png';
 
 export function Exchanges() {
   return (
