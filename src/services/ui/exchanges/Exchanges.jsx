@@ -4,11 +4,14 @@ import binance from '../../../shared/assets/images/binance.png';
 import bybit from '../../../shared/assets/images/bybit.png';
 import bitget from '../../../shared/assets/images/bitget.png';
 import okx from '../../../shared/assets/images/okx.png';
+import { useTranslation } from 'react-i18next';
 
 export function Exchanges() {
+  const { t } = useTranslation();
+
   return (
     <Card
-      heading='Биржи'
+      heading={t('exchanges.heading')}
       className={style.exchanges}
       contentClassName={style.content}
       headingClassName={style.heading}

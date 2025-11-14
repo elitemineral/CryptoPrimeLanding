@@ -20,7 +20,7 @@ export function Header() {
     <header className={style.header}>
       <LanguagePicker onChange={hanldeChangeLanguage} value={language} />
       <h1 className={style.heading}>CryptoPrime</h1>
-      <p className={style.subheading}>{t('subheading')}</p>
+      <p className={style.subheading}>{t('header.subheading')}</p>
     </header>
   );
 }

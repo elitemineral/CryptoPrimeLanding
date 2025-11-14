@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { Card, Icon, RoundLink } from '../../../shared/ui';
 import style from './media.module.scss';
 
 export function Media() {
+  const { t } = useTranslation();
+
   return (
     <Card
-      heading='Медиа'
+      heading={t('media.heading')}
       className={style.media}
       contentClassName={style.content}
     >

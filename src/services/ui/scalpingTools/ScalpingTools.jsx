@@ -1,30 +1,33 @@
+import { useTranslation } from 'react-i18next';
 import { Card, Icon, BtnLink } from '../../../shared/ui';
 import style from './scalpingTools.module.scss';
 
 export function ScalpingTools() {
+  const { t } = useTranslation();
+
   return (
     <Card
       className={style.scalpingTools}
-      description='Криптовалю́та — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система'
-      heading='Scalping Tools'
+      description={t('scalpingTools.description')}
+      heading={t('scalpingTools.heading')}
       headingClassName={style.heading}
     >
       <div className={style.toolsHeading}>
-        Инструменты скальпера
+        {t('scalpingTools.toolsLabel')}
         <Icon className={style.arrow} type={Icon.types.arrow} />
       </div>
       <div className={style.tools}>
         <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.bot} />
-          Бот
+          {t('scalpingTools.tools.bot')}
         </BtnLink>
         <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.proxy} />
-          Прокси
+          {t('scalpingTools.tools.proxy')}
         </BtnLink>
         <BtnLink className={style.toolsLink} href='http://cryptoprime.com'>
           <Icon type={Icon.types.screen} />
-          Скринер
+          {t('scalpingTools.tools.screener')}
         </BtnLink>
       </div>
     </Card>

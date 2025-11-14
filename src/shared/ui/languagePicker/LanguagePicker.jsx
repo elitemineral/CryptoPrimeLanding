@@ -1,11 +1,10 @@
-import React from 'react';
-import { Select, Option } from '@material-tailwind/react';
+import { Select, Option } from '@material-tailwind/react/components/Select';
 
 export function LanguagePicker({ className, value, onChange }) {
   return (
     <Select
-      // className={className}
-      variant='static'
+      className={className}
+      variant='outlined'
       value={value}
       onChange={onChange}
     >
