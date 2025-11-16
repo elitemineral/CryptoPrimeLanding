@@ -32,5 +32,12 @@
       "proxy": "Прокси",
       "screener": "Скринер"
     }
+  },
+  "propCompany": {
+    "heading": "Проп-компания",
+    "subheading": "Описание"
+  },
+  "discord": {
+    "heading": "Discord"
   }
 }
