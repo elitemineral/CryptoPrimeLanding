@@ -1,0 +1,34 @@
+@use '../../../shared/styles/colors.scss' as *;
+@use '../../../shared/styles/functions.scss' as *;
+
+$content-base: 128;
+$link-base: 64;
+$link-min: 48;
+
+.media {
+  grid-area: media;
+  background-color: $bright-sun;
+}
+
+.content {
+  width: $content-base + px;
+}
+
+.mediaLink.mediaLink {
+  &:hover {
+    path {
+      stroke: $white;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .mediaLink.mediaLink {
+    width: calcFluid($link-min, $link-base, 320, 390);
+    height: calcFluid($link-min, $link-base, 320, 390);
+  }
+
+  .content {
+    width: calcFluid($link-min * 2, $content-base, 320, 390);
+  }
+}

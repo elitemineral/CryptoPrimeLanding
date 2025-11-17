@@ -1,0 +1,61 @@
+@use '../../../shared/styles/colors.scss' as *;
+
+.services {
+  display: grid;
+  gap: 8px;
+
+  grid-template-columns: 1fr 352px 208px;
+
+  grid-template-areas:
+    'broker . .'
+    'academy exchanges media'
+    'tools company discord';
+}
+
+@media (max-width: 1279px) {
+  .services {
+    grid-template-columns: 1fr 208px 208px;
+
+    grid-template-areas:
+      'broker . .'
+      'academy exchanges exchanges'
+      'tools company company'
+      '. discord media';
+  }
+}
+
+@media (max-width: 920px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      'broker broker . .'
+      'academy academy exchanges exchanges'
+      'tools tools company company'
+      '. . discord media';
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    grid-template-areas:
+      'broker broker broker broker'
+      'academy academy academy academy'
+      'exchanges exchanges tools tools'
+      'company company discord media';
+  }
+}
+
+@media (max-width: 720px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      'broker broker'
+      'academy academy'
+      'exchanges exchanges'
+      'tools tools'
+      'company company'
+      'discord media';
+  }
+}

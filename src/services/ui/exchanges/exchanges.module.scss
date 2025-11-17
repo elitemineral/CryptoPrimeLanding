@@ -1,0 +1,44 @@
+@use '../../../shared/styles/colors.scss' as *;
+@use '../../../shared/styles/functions.scss' as *;
+
+$link-base: 64;
+$link-min: 48;
+
+.exchanges {
+  grid-area: exchanges;
+  background-color: $blue-lotus;
+}
+
+.heading {
+  text-align: right;
+}
+
+.content {
+  text-align: right;
+}
+
+.exchangeImg {
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    text-align: left;
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 390px) {
+  .exchangeLink {
+    width: calcFluid($link-min, $link-base, 320, 390);
+    height: calcFluid($link-min, $link-base, 320, 390);
+  }
+
+  .exchangeImg {
+    width: calcFluid(32, 40, 320, 390);
+  }
+}

@@ -1,0 +1,32 @@
+@use '../../styles/colors.scss' as *;
+@use '../../styles/functions.scss' as *;
+
+.btnLink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+
+  padding: 16px;
+  border-radius: 16px;
+
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+
+  // TODO: сделать стили при нажатии, дизейблинге
+  &:hover {
+    color: $white;
+    background-color: $palatinate-blue;
+  }
+
+  &:active {
+    background-color: $dark-jungle-green;
+  }
+}
+
+@media (max-width: 390px) {
+  .btnLink {
+    padding: calcFluid(11, 16, 320, 390);
+    font-size: calcFluid(14, 16, 320, 390);
+  }
+}

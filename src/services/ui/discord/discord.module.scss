@@ -1,0 +1,13 @@
+@use '../../../shared/styles/colors.scss' as *;
+
+.discord {
+  grid-area: discord;
+  color: $dark-jungle;
+  outline: 1px solid $gainsboro;
+  outline-offset: -1px;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 500;
+}
